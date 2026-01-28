@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pw-coupon-code.com/sitemap.xml
