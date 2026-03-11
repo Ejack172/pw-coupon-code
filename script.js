@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function copyCode() {
-    const code = "MD0MIR0001";
+    const code = "MD0MIR0002";
     navigator.clipboard.writeText(code).then(() => {
         const btn = document.querySelector('.copy-btn');
         const originalContent = btn.innerHTML; // Store icon
