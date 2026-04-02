@@ -61,38 +61,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-function copyCode() {
-    const code = "MD0MIR0002";
-    navigator.clipboard.writeText(code).then(() => {
-        const btn = document.querySelector('.copy-btn');
-        const originalContent = btn.innerHTML; // Store icon
-
-        // Button Feedback
-        btn.innerHTML = `<span style="color:var(--pw-primary); font-size:0.8rem; font-weight:700;">Copied!</span>`;
-        btn.style.borderColor = 'var(--pw-primary)';
-
-        // Toast Feedback
-        showToast("Coupon code copied successfully!");
-
-        // Reset Button after 2s
-        setTimeout(() => {
-            btn.innerHTML = originalContent;
-            btn.style.borderColor = '';
-        }, 2000);
-    }).catch(err => {
-        console.error('Failed to copy: ', err);
-    });
-}
-
-function showToast(message) {
-    const toast = document.getElementById('copy-toast');
-    if (toast) {
-        toast.querySelector('span').textContent = message;
-        toast.classList.add('show');
-
-        // Auto hide after 2.5s
-        setTimeout(() => {
-            toast.classList.remove('show');
-        }, 2500);
-    }
-}

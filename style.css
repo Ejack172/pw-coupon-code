@@ -381,6 +381,39 @@ a {
     color: var(--text-light);
 }
 
+.whatsapp-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 16px 20px;
+    background: #25D366; /* WhatsApp Green */
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 700;
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    gap: 10px;
+}
+
+.whatsapp-btn:hover {
+    background: #128C7E;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(37, 211, 102, 0.4);
+}
+
+.trust-text-small {
+    font-size: 0.85rem;
+    color: var(--text-body);
+    margin-top: 10px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
 /* Trust Bar */
 .trust-bar {
     padding: 3rem 0;
